@@ -4,7 +4,7 @@
 Summary:	Archive::Zip perl module
 Summary(pl):	Modu³ perla Archive::Zip
 Name:		perl-Archive-Zip
-Version:	1.00
+Version:	1.01
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -41,6 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz docs/*.gz
+%{_mandir}/man3/*
 %attr(755,root,root) %{_bindir}/crc32
 %dir %{perl_sitelib}/Archive/Zip
 %{perl_sitelib}/Archive/Zip/*.pm
