@@ -4,8 +4,8 @@
 Summary:	Archive-Zip perl module
 Summary(pl):	Modu³ perla Archive-Zip
 Name:		perl-Archive-Zip
-Version:	0.11
-Release:	4
+Version:	1.00
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
