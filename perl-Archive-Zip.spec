@@ -8,12 +8,12 @@
 Summary:	Archive::Zip - module for manipulation of ZIP archives
 Summary(pl):	Archive::Zip - modu³ do manipulacji archiwami ZIP
 Name:		perl-Archive-Zip
-Version:	1.05
-Release:	2
+Version:	1.06
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	33ee624c7be5b35c635b9e6831d076bd
+# Source0-md5:	0e5843e5e0f961652ff52c0d64f7ea0a
 BuildRequires:	perl-devel >= 5.6
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-Compress-Zlib >= 1.14
