@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Archive
 %define		pnam	Zip
-Summary:	Archive-Zip perl module
-Summary(pl):	Modu³ perla Archive-Zip
+Summary:	Archive::Zip perl module
+Summary(pl):	Modu³ perla Archive::Zip
 Name:		perl-Archive-Zip
 Version:	1.00
 Release:	1
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Archive-Zip - module for manipulation of zip archives.
+Archive::Zip - module for manipulation of zip archives.
 
 %description -l pl
-Archive-Zip - modu³ do manipulacji archiwami zip.
+Archive::Zip - modu³ do manipulacji archiwami zip.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
