@@ -5,7 +5,7 @@ Summary:	Archive-Zip perl module
 Summary(pl):	Modu³ perla Archive-Zip
 Name:		perl-Archive-Zip
 Version:	0.11
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,7 +21,7 @@ Archive-Zip - module for manipulation of zip archives.
 Archive-Zip - modu³ do manipulacji archiwami zip.
 
 %prep
-%setup -q -n Archive-Zip-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
