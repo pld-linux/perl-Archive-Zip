@@ -4,7 +4,7 @@
 Summary:	Archive::Zip perl module
 Summary(pl):	Modu³ perla Archive::Zip
 Name:		perl-Archive-Zip
-Version:	1.01
+Version:	1.02
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
