@@ -1,12 +1,11 @@
-%define	pdir	Archive
-%define	pnam	Zip
 %include	/usr/lib/rpm/macros.perl
+%define		pdir	Archive
+%define		pnam	Zip
 Summary:	Archive-Zip perl module
 Summary(pl):	Modu³ perla Archive-Zip
 Name:		perl-Archive-Zip
 Version:	0.11
 Release:	3
-
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
