@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Archive
@@ -8,16 +8,18 @@
 Summary:	Archive::Zip - module for manipulation of ZIP archives
 Summary(pl):	Archive::Zip - modu³ do manipulacji archiwami ZIP
 Name:		perl-Archive-Zip
-Version:	1.05
+Version:	1.14
 Release:	2
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	perl >= 5.6
-%if %{?_without_tests:0}%{!?_without_tests:1}
+# Source0-md5:	96b2caf19d5aea3adff02c323247e66a
+BuildRequires:	perl-devel >= 1:5.6.1
+%if %{with tests}
 BuildRequires:	perl-Compress-Zlib >= 1.14
 %endif
-BuildRequires:	rpm-perlprov >= 4.0.2-104
+BuildRequires:	rpm-perlprov >= 4.0.2-112.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,16 +35,18 @@ manipulowania, czytania i zapisywania archiwów ZIP.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=site
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
