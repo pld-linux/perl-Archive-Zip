@@ -6,7 +6,7 @@
 %define		pdir	Archive
 %define		pnam	Zip
 Summary:	Archive::Zip - module for manipulation of ZIP archives
-Summary(pl):	Archive::Zip - modu³ do manipulacji archiwami ZIP
+Summary(pl.UTF-8):   Archive::Zip - moduÅ‚ do manipulacji archiwami ZIP
 Name:		perl-Archive-Zip
 Version:	1.18
 Release:	1
@@ -31,9 +31,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The Archive::Zip module allows a Perl program to create, manipulate,
 read, and write ZIP archive files.
 
-%description -l pl
-Modu³ Archive::Zip udostêpnia programom w Perlu mo¿liwo¶æ tworzenia,
-manipulowania, czytania i zapisywania archiwów ZIP.
+%description -l pl.UTF-8
+ModuÅ‚ Archive::Zip udostÄ™pnia programom w Perlu moÅ¼liwoÅ›Ä‡ tworzenia,
+manipulowania, czytania i zapisywania archiwÃ³w ZIP.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
