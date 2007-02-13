@@ -6,7 +6,7 @@
 %define		pdir	Archive
 %define		pnam	Zip
 Summary:	Archive::Zip - module for manipulation of ZIP archives
-Summary(pl.UTF-8):   Archive::Zip - moduł do manipulacji archiwami ZIP
+Summary(pl.UTF-8):	Archive::Zip - moduł do manipulacji archiwami ZIP
 Name:		perl-Archive-Zip
 Version:	1.18
 Release:	1
