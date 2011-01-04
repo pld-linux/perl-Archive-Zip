@@ -9,7 +9,7 @@ Summary:	Archive::Zip - module for manipulation of ZIP archives
 Summary(pl.UTF-8):	Archive::Zip - moduł do manipulacji archiwami ZIP
 Name:		perl-Archive-Zip
 Version:	1.30
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
