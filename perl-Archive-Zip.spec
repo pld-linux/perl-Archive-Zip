@@ -55,6 +55,8 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Archive/Zip/FAQ.pod
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -66,4 +68,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Archive/Zip/*.pm
 %{perl_vendorlib}/Archive/Zip.pm
 %{_examplesdir}/%{name}-%{version}
-%{_mandir}/man3/*
+%{_mandir}/man3/Archive::Zip*.3pm*
