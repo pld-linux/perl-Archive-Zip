@@ -19,9 +19,10 @@ URL:		http://search.cpan.org/dist/Archive-Zip/
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
 BuildRequires:	perl(File::Spec) >= 0.80
-BuildRequires:	perl-IO-Compress
+BuildRequires:	perl-Compress-Raw-Zlib >= 2.017
 BuildRequires:	perl-File-Which >= 0.05
-BuildRequires:	perl-Test-Simple >= 0.42
+BuildRequires:	perl-IO-Compress
+BuildRequires:	perl-Test-Simple >= 0.88
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
